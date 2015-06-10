@@ -15,53 +15,10 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button spotify = (Button) findViewById(R.id.btnSpotify);
-        Button score = (Button) findViewById(R.id.btnScore);
-        Button library = (Button) findViewById(R.id.btnLibrary);
-        Button build = (Button) findViewById(R.id.btnBuild);
-        Button reader = (Button) findViewById(R.id.btnReader);
-        Button capstone = (Button) findViewById(R.id.btnCapstone);
-
-        View.OnClickListener myListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                makeToast(v);
-            }
-        };
-        spotify.setOnClickListener(myListener);
-        score.setOnClickListener(myListener);
-        library.setOnClickListener(myListener);
-        build.setOnClickListener(myListener);
-        reader.setOnClickListener(myListener);
-        capstone.setOnClickListener(myListener);
-
     }
 
-    public void makeToast(View v) {
-        String app = "";
-        switch (v.getId()) {
-            case R.id.btnSpotify:
-                app = "Spotify Streamer App";
-                break;
-            case R.id.btnScore:
-                app = "Football Scores App";
-                break;
-            case R.id.btnLibrary:
-                app = "Library App";
-                break;
-            case R.id.btnBuild:
-                app = "Build It Bigger App";
-                break;
-            case R.id.btnReader:
-                app = "XYZ Reader App";
-                break;
-            case R.id.btnCapstone:
-                app = "Capstone  App";
-                break;
-        }
-        Toast.makeText(this,
-                "This button will launch my " + app, Toast.LENGTH_LONG).show();
+    public void displayToast(View v) {
+        Toast.makeText(this, getResources().getString(R.string.toast_message) + ((Button) v).getText(), Toast.LENGTH_LONG).show();
     }
 
     @Override

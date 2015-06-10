@@ -5,98 +5,90 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
     android:orientation="vertical"
-    android:background="#90A4AE">
+    android:background="@color/background">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="My Nanodegree Apps!"
+        android:text="@string/title"
         android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:gravity="center" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Spotify Streamer"
+        android:text="@string/spotify"
         android:id="@+id/btnSpotify"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
+        android:onClick="displayToast"
         android:layout_marginTop="30dp"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
-        android:background="#0288D1"
+        android:background="@color/btn_background"
         android:textColor="#ffffffff" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Scores App"
+        android:text="@string/score"
         android:id="@+id/btnScore"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
+        android:onClick="displayToast"
         android:layout_marginTop="15dp"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
-        android:background="#0288D1"
+        android:background="@color/btn_background"
         android:layout_gravity="center_horizontal"
         android:textColor="#ffffffff" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Library App"
+        android:text="@string/library"
         android:id="@+id/btnLibrary"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
+        android:onClick="displayToast"
         android:layout_marginTop="15dp"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
-        android:background="#0288D1"
+        android:background="@color/btn_background"
         android:layout_gravity="center_horizontal"
         android:textColor="#ffffffff" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Build It Bigger"
+        android:text="@string/builder"
         android:id="@+id/btnBuild"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
+        android:onClick="displayToast"
         android:layout_marginTop="15dp"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
-        android:background="#0288D1"
+        android:background="@color/btn_background"
         android:layout_gravity="center_horizontal"
         android:textColor="#ffffffff" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="XYZ Reader"
+        android:text="@string/reader"
         android:id="@+id/btnReader"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
+        android:onClick="displayToast"
         android:layout_marginTop="15dp"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
-        android:background="#0288D1"
+        android:background="@color/btn_background"
         android:layout_gravity="center_horizontal"
         android:textColor="#ffffffff" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Capstone: My Own App"
+        android:text="@string/capstone"
         android:id="@+id/btnCapstone"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
+        android:onClick="displayToast"
         android:layout_marginTop="15dp"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
-        android:background="#673AB7"
+        android:background="@color/btn_final"
         android:layout_gravity="center_horizontal"
         android:textColor="#ffffffff" />
 </LinearLayout>
